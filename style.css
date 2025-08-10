@@ -1,4 +1,4 @@
-/* Base reset */
+/* Reset */
 * {
   margin: 0;
   padding: 0;
@@ -6,90 +6,99 @@
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
-  background-color: #121212;
-  color: #f5f5f5;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #0d0d0d;
+  color: #eaeaea;
   line-height: 1.6;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
+  min-height: 100vh;
 }
 
 /* Header */
 header {
-  background-color: #1e1e1e;
-  padding: 20px;
+  background-color: #111;
+  padding: 30px 20px;
   text-align: center;
-  border-bottom: 1px solid #333;
+  border-bottom: 1px solid #222;
 }
 
 header h1 {
-  font-size: 2rem;
+  font-size: 2.4rem;
   color: #00ff99;
+  margin-bottom: 10px;
 }
 
+/* Navigation */
 nav ul {
   list-style: none;
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: 25px;
   margin-top: 10px;
 }
 
 nav a {
   text-decoration: none;
-  color: #f5f5f5;
-  padding: 5px 10px;
+  color: #eaeaea;
+  font-weight: 500;
+  padding: 6px 12px;
   border-radius: 4px;
-  transition: background 0.3s ease;
+  transition: background-color 0.3s ease;
 }
 
 nav a:hover,
 nav a.active {
   background-color: #00ff99;
-  color: #121212;
+  color: #0d0d0d;
 }
 
 /* Main content */
 main {
   flex: 1;
-  padding: 40px 20px;
   max-width: 800px;
-  margin: 0 auto;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+section {
+  margin-bottom: 40px;
 }
 
 h2 {
-  font-size: 1.5rem;
-  margin-bottom: 15px;
+  font-size: 1.8rem;
   color: #00ff99;
+  margin-bottom: 15px;
 }
 
 p {
+  font-size: 1.1rem;
   margin-bottom: 20px;
+  color: #ccc;
 }
 
 /* Footer */
 footer {
-  background-color: #1e1e1e;
+  background-color: #111;
   text-align: center;
-  padding: 15px;
+  padding: 20px;
   font-size: 0.9rem;
-  color: #aaa;
-  border-top: 1px solid #333;
+  color: #888;
+  border-top: 1px solid #222;
 }
 
-/* Responsive tweaks */
+/* Responsive */
 @media (max-width: 600px) {
   nav ul {
     flex-direction: column;
     gap: 10px;
   }
 
-  main {
-    padding: 20px;
+  header h1 {
+    font-size: 2rem;
   }
 
-  header h1 {
-    font-size: 1.6rem;
+  main {
+    padding: 0 15px;
   }
 }
