@@ -1,51 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Snake Game Hub</title>
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
 </head>
 <body>
   <header>
     <h1>🐍 Snake Game Hub</h1>
-    <nav>
-      <ul>
-        <li><a href="index.html" class="active">Home</a></li>
-        <li><a href="updates.html">Updates</a></li>
-        <li><a href="articles.html">Articles</a></li>
-      </ul>
-    </nav>
-    <div class="toggle-container">
-      <label class="switch">
-        <input type="checkbox" id="modeToggle">
-        <span class="slider"></span>
-      </label>
-      <span id="modeLabel">Dark Mode</span>
-    </div>
   </header>
 
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Play</a>
+    <a href="#">Leaderboard</a>
+    <a href="#">About</a>
+  </nav>
+
   <main>
-    <section class="intro">
-      <h2>Welcome!</h2>
-      <p>This is your central hub for all things Snake Game. Stay updated, read articles, and explore the evolution of your project.</p>
-      <p>Use the navigation above to explore updates and developer insights.</p>
-    </section>
+    <article>
+      <h2>Welcome to the Ultimate Snake Experience</h2>
+      <p>
+        Dive into the classic arcade world of Snake! Whether you're here to relive nostalgia or challenge your reflexes, we've got the perfect game for you.
+      </p>
+      <p>
+        Use the navigation above to start playing, check your rank, or learn more about the history of Snake. Stay tuned for updates and new features!
+      </p>
+    </article>
   </main>
 
   <footer>
-    <p>&copy; 2025 Taha. All rights reserved.</p>
+    <p>&copy; 2025 Snake Game Hub. All rights reserved.</p>
   </footer>
-
-  <script>
-    const toggle = document.getElementById('modeToggle');
-    const label = document.getElementById('modeLabel');
-
-    toggle.addEventListener('change', () => {
-      document.body.classList.toggle('light-mode');
-      label.textContent = document.body.classList.contains('light-mode') ? 'Light Mode' : 'Dark Mode';
-    });
-  </script>
 </body>
 </html>
