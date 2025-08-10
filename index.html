@@ -17,17 +17,35 @@
         <li><a href="articles.html">Articles</a></li>
       </ul>
     </nav>
+    <div class="toggle-container">
+      <label class="switch">
+        <input type="checkbox" id="modeToggle">
+        <span class="slider"></span>
+      </label>
+      <span id="modeLabel">Dark Mode</span>
+    </div>
   </header>
 
   <main>
     <section class="intro">
       <h2>Welcome!</h2>
       <p>This is your central hub for all things Snake Game. Stay updated, read articles, and explore the evolution of your project.</p>
+      <p>Use the navigation above to explore updates and developer insights.</p>
     </section>
   </main>
 
   <footer>
     <p>&copy; 2025 Taha. All rights reserved.</p>
   </footer>
+
+  <script>
+    const toggle = document.getElementById('modeToggle');
+    const label = document.getElementById('modeLabel');
+
+    toggle.addEventListener('change', () => {
+      document.body.classList.toggle('light-mode');
+      label.textContent = document.body.classList.contains('light-mode') ? 'Light Mode' : 'Dark Mode';
+    });
+  </script>
 </body>
 </html>
