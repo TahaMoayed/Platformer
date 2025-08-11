@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaming Hub - Updates & Forums</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="#">Gaming Hub</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#updates">Updates</a></li>
+                <li><a href="#forums">Forums</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Welcome to Gaming Hub</h1>
+            <p>Your one-stop destination for game updates, forums, and much more!</p>
+            <a href="#updates" class="cta-btn">Check for Updates</a>
+        </div>
+    </section>
+
+    <section id="updates" class="section">
+        <h2>Game Updates</h2>
+        <p>Stay up-to-date with the latest updates and patches for your favorite games.</p>
+        <button class="update-btn" onclick="checkForUpdate()">Check for Updates</button>
+        <p class="update-status" id="update-status"></p>
+    </section>
+
+    <section id="forums" class="section">
+        <h2>Community Forums</h2>
+        <p>Join discussions with fellow gamers, share tips, and more!</p>
+        <a href="https://github.com" class="cta-btn">Visit Forum</a>
+    </section>
+
+    <section id="about" class="section">
+        <h2>About Gaming Hub</h2>
+        <p>Gaming Hub is the premier destination for gaming enthusiasts to get updates, join forums, and explore the world of gaming. We offer a place to connect with gamers worldwide and share the latest news in the gaming industry.</p>
+    </section>
+
+    <section id="contact" class="section">
+        <h2>Contact Us</h2>
+        <p>If you have any questions or need assistance, feel free to reach out to us!</p>
+        <form action="#" method="post">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit" class="cta-btn">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Gaming Hub. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        function checkForUpdate() {
+            const currentVersion = "1.0.1";  // Replace with the actual current version
+            const latestVersion = "1.0.2";  // Replace with actual latest version from server
+
+            const updateStatus = document.getElementById('update-status');
+            if (currentVersion !== latestVersion) {
+                updateStatus.textContent = "A new version is available! Please update.";
+                updateStatus.style.color = "green";
+            } else {
+                updateStatus.textContent = "Your game is up to date!";
+                updateStatus.style.color = "blue";
+            }
+        }
+    </script>
+</body>
+</html>
