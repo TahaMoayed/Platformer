@@ -1,42 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign Up - GameHub</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <title>Sign Up - Platformer by Taha</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Navigation Bar -->
-    <header>
-        <nav>
-            <div class="logo">
-                <h1>GameHub</h1>
-            </div>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="login.html">Login</a></li>
-            </ul>
-        </nav>
-    </header>
+  <header>
+    <h1>Create an Account</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="signin.html">Sign In</a>
+      <a href="signup.html">Sign Up</a>
+    </nav>
+  </header>
 
-    <!-- Sign Up Form -->
-    <section class="form-container">
-        <div class="form-box">
-            <h2>Create an Account</h2>
-            <form action="#">
-                <input type="text" placeholder="Username" required>
-                <input type="email" placeholder="Email" required>
-                <input type="password" placeholder="Password" required>
-                <button type="submit" class="btn">Sign Up</button>
-                <p>Already have an account? <a href="login.html">Login</a></p>
-            </form>
-        </div>
+  <main>
+    <section>
+      <form action="dashboard.html" method="POST">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+
+        <button type="submit">Sign Up</button>
+      </form>
     </section>
+  </main>
 
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2025 GameHub. All Rights Reserved.</p>
-    </footer>
+  <footer>
+    <p>&copy; 2025 Platformer by Taha</p>
+  </footer>
 </body>
 </html>
