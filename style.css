@@ -1,193 +1,157 @@
-/* Global Styles */
-body {
-    font-family: 'Poppins', sans-serif;
+/* Reset some default styles */
+* {
     margin: 0;
     padding: 0;
-    background-color: #111;
-    color: #fff;
     box-sizing: border-box;
 }
 
-h1, h2 {
-    font-family: 'Lora', serif;
+body {
+    font-family: 'Arial', sans-serif;
+    background: #141414;
+    color: #f2f2f2;
 }
 
-/* Navbar Styles */
-.navbar {
-    background-color: #1b1b1b;
-    padding: 20px;
-    text-align: center;
-    border-bottom: 1px solid #444;
-}
-
-.navbar h1 {
-    color: #f8b400;
-    margin: 0;
-}
-
-.navbar ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-.navbar ul li {
-    display: inline;
-    margin: 0 15px;
-}
-
-.navbar ul li a {
-    color: #f8b400;
+a {
     text-decoration: none;
-    font-weight: 600;
-    transition: color 0.3s ease;
+    color: inherit;
 }
 
-.navbar ul li a:hover {
-    color: #fff;
-}
-
-/* Homepage Styles */
-.home {
-    text-align: center;
-    padding: 100px 0;
-    background-color: #2c2c2c;
-}
-
-.home h2 {
-    font-size: 2.5rem;
-    color: #f8b400;
-}
-
-.home p {
-    font-size: 1.2rem;
-    color: #aaa;
-}
-
-.button {
-    background-color: #f8b400;
-    border: none;
+header {
+    background: linear-gradient(135deg, #0a0a0a, #333);
     padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    color: #f7c736;
+    font-size: 2em;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 30px;
+}
+
+.nav-links li a {
+    color: #f2f2f2;
+    font-size: 1.2em;
+    transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+    color: #f7c736;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url('your-hero-image.jpg');
+    background-size: cover;
     color: white;
-    font-weight: bold;
-    cursor: pointer;
-    border-radius: 25px;
-    transition: background-color 0.3s ease;
-}
-
-.button:hover {
-    background-color: #ff8a00;
-}
-
-/* Login Page Styles */
-.login-container {
+    height: 80vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    background-color: #111;
-}
-
-.login-form {
-    background-color: #222;
-    padding: 40px;
-    border-radius: 10px;
-    width: 300px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-}
-
-.login-form h2 {
-    font-size: 1.8rem;
-    color: #f8b400;
     text-align: center;
+    padding: 0 20px;
 }
 
-.login-form input {
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #444;
-    background-color: #333;
-    color: white;
-    border-radius: 5px;
+.hero h2 {
+    font-size: 3.5em;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 20px;
 }
 
-.login-form button {
-    width: 100%;
-    padding: 10px;
-    background-color: #f8b400;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1rem;
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 40px;
+}
+
+.cta-button {
+    padding: 12px 30px;
+    font-size: 1.2em;
+    background: #f7c736;
+    color: black;
+    border-radius: 50px;
+    text-transform: uppercase;
     font-weight: bold;
-    transition: background-color 0.3s ease;
+    transition: all 0.3s;
 }
 
-.login-form button:hover {
-    background-color: #ff8a00;
+.cta-button:hover {
+    background: #f7b133;
 }
 
-.link {
-    text-align: center;
-    margin-top: 15px;
-}
-
-.link a {
-    color: #f8b400;
-    text-decoration: none;
-}
-
-.link a:hover {
-    text-decoration: underline;
-}
-
-/* Signup Page Styles */
-.signup-container {
+/* Form Container */
+.form-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    background-color: #111;
+    height: 60vh;
 }
 
-.signup-form {
-    background-color: #222;
+.form-box {
+    background: #222;
     padding: 40px;
     border-radius: 10px;
-    width: 300px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-}
-
-.signup-form h2 {
-    font-size: 1.8rem;
-    color: #f8b400;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+    width: 100%;
+    max-width: 400px;
     text-align: center;
 }
 
-.signup-form input {
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #444;
-    background-color: #333;
-    color: white;
-    border-radius: 5px;
+.form-box h2 {
+    margin-bottom: 20px;
+    font-size: 2em;
+    color: #f7c736;
 }
 
-.signup-form button {
+.form-box input {
     width: 100%;
-    padding: 10px;
-    background-color: #f8b400;
-    color: white;
-    border: none;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #444;
+    background: #333;
+    color: #f2f2f2;
+    font-size: 1.1em;
+}
+
+.form-box button {
+    padding: 15px 30px;
+    font-size: 1.2em;
+    background: #f7c736;
+    color: black;
     border-radius: 5px;
     cursor: pointer;
-    font-size: 1rem;
-    font-weight: bold;
-    transition: background-color 0.3s ease;
+    transition: all 0.3s;
+    border: none;
 }
 
-.signup-form button:hover {
-    background-color: #ff8a00;
+.form-box button:hover {
+    background: #f7b133;
+}
+
+.form-box p {
+    margin-top: 20px;
+    color: #f2f2f2;
+}
+
+.form-box p a {
+    color: #f7c736;
+}
+
+/* Footer */
+footer {
+    background: #111;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 15px;
+    margin-top: 50px;
 }
